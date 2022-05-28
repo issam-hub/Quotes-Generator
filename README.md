@@ -10,3 +10,4 @@ playing with APIs with this Quotes Generator Website
 - JS
 - [Unsplash API](https://unsplash.com/developers)
 - [Quotable API](https://github.com/lukePeavey/quotable#get-random-quote)
+- font awesome
