@@ -1,0 +1,80 @@
+body {
+    font-family: "Caveat", cursive;
+    overflow: hidden;
+}
+
+::selection {
+    background-color: black;
+}
+
+.filter {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 124.6%;
+    width: 100%;
+    backdrop-filter: blur(1.3px);
+}
+
+.content {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    backdrop-filter: blur(15px);
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    width: max(300px, 30%);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin: 100px auto;
+    background-color: rgb(0 0 0 / 20%);
+}
+
+.content i {
+    font-size: 1.5rem;
+    padding: 13px;
+    background-color: rgba(11, 32, 58);
+    color: rgb(62, 179, 62);
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.content h2 {
+    line-height: 1.5;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.content span {
+    font-size: 1.5rem;
+}
+.picAuthor {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: clamp(1.2rem, 5vw, 1.7rem);
+}
+
+.picAuthor p {
+    color: black;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px white;
+}
+.picAuthor a {
+    padding-left: 10px;
+    color: rgb(81, 86, 226);
+    font-weight: bold;
+}
